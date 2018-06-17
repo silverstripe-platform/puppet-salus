@@ -1,0 +1,21 @@
+{
+  "name": "puppet-salus",
+  "version": "1.0.0",
+  "author": "SilverStripe Ltd",
+  "summary": "Base library for creatng metrics",
+  "license": "BSD-3-Clause",
+  "source": "https://github.com/silverstripeltd/puppet-salus",
+  "project_page": "https://github.com/silverstripeltd/puppet-salus",
+  "issues_url": "https://github.com/silverstripeltd/puppet-salus/issues",
+  "dependencies": [
+  ],
+  "data_provider": null,
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    }
+  ]
+}
