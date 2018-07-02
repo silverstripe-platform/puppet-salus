@@ -35,14 +35,14 @@ class salus::install inherits salus {
         content => "${cron_minute} ${cron_hour} * * * root cd /opt/salus/bin && ./salus 2>&1 | logger -t salus\n",
     }
 
-	# Set up the cron for uploading certificates to the WAF, if parameters are set
-	if $waf_cron_minute and $waf_cron_hour {
-		file { "/etc/cron.d/salus-waf":
-			ensure => "file",
-			owner => "root",
-			group => "root",
-			mode => 0644,
-			content => "${waf_cron_minute} ${waf_cron_hour} * * * root cd /opt/salus/bin && ./salus wafcertificate:upload --all 2>&1 | logger -t salus\n",
-		}
-	}
+    # Set up the cron for uploading certificates to the WAF, if parameters are set
+    if $waf_cron_minute and $waf_cron_hour {
+        file { "/etc/cron.d/salus-waf":
+            ensure => "file",
+            owner => "root",
+            group => "root",
+            mode => 0644,
+            content => "${waf_cron_minute} ${waf_cron_hour} * * * root cd /opt/salus/bin && ./salus wafcertificate:upload --all 2>&1 | logger -t salus\n",
+        }
+    }
 }
