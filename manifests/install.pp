@@ -31,7 +31,7 @@ class salus::install inherits salus {
         ensure => "file",
         owner => "root",
         group => "root",
-        mode => 0644,
+        mode => "0644",
         content => "${cron_minute} ${cron_hour} * * * root cd /opt/salus/bin && ./salus 2>&1 | logger -t salus\n",
     }
 
@@ -41,7 +41,7 @@ class salus::install inherits salus {
             ensure => "file",
             owner => "root",
             group => "root",
-            mode => 0644,
+            mode => "0644",
             content => "${waf_cron_minute} ${waf_cron_hour} * * * root cd /opt/salus/bin && ./salus wafcertificate:upload --all 2>&1 | logger -t salus\n",
         }
     }
