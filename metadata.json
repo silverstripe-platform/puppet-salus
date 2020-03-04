@@ -1,8 +1,8 @@
 {
   "name": "puppet-salus",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "SilverStripe Ltd",
-  "summary": "Base library for creatng metrics",
+  "summary": "Let's Encrypt provisioning",
   "license": "BSD-3-Clause",
   "source": "https://github.com/silverstripeltd/puppet-salus",
   "project_page": "https://github.com/silverstripeltd/puppet-salus",

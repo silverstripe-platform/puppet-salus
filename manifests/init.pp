@@ -19,8 +19,8 @@ class salus(
     $download_link,
     $cron_minute = "0",
     $cron_hour = "*/4",
-    $waf_cron_minute = undef,
-    $waf_cron_hour = undef,
+    $cert_upload_cron_minute = undef,
+    $cert_upload_cron_hour = undef,
 ) {
 	class { 'salus::install': } ->
 	class { 'salus::config': }
