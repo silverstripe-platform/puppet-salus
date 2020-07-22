@@ -21,6 +21,7 @@ class salus(
     $cron_hour = "*/4",
     $cert_upload_cron_minute = undef,
     $cert_upload_cron_hour = undef,
+    $validate_certificates_using_dash = false,
 ) {
 	class { 'salus::install': } ->
 	class { 'salus::config': }
