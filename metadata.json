@@ -4,9 +4,9 @@
   "author": "SilverStripe Ltd",
   "summary": "Let's Encrypt provisioning",
   "license": "BSD-3-Clause",
-  "source": "https://github.com/silverstripeltd/puppet-salus",
-  "project_page": "https://github.com/silverstripeltd/puppet-salus",
-  "issues_url": "https://github.com/silverstripeltd/puppet-salus/issues",
+  "source": "https://github.com/silverstripe-platform/puppet-salus",
+  "project_page": "https://github.com/silverstripe-platform/puppet-salus",
+  "issues_url": "https://github.com/silverstripe-platform/puppet-salus/issues",
   "dependencies": [
   ],
   "data_provider": null,
