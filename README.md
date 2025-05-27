@@ -1,6 +1,6 @@
 # puppet-salus
 
-Manage the installation and configuration of our Let's Encrypt tool [`salus`](https://github.com/silverstripeltd/salus)
+Manage the installation and configuration of our Let's Encrypt tool [`salus`](https://github.com/silverstripe-platform/salus)
 
 ## Installation
 
@@ -11,7 +11,7 @@ Certificates and keys are named `{stack-env}.crt` and `{stack-env}.key`. Any ngi
 In your PuppetFile add
 ```
 mod 'silverstripe-salus',
-	:git => 'git@github.com:silverstripeltd/puppet-salus.git'
+	:git => 'git@github.com:silverstripe-platform/puppet-salus.git'
 ```
 
 ## Configuration
